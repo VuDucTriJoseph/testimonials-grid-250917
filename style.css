@@ -60,3 +60,28 @@ img{
     background-color: hsl(219, 29%, 14%);
     color: hsl(0, 0%, 81%);
 }
+
+@media (min-width:375px){
+    main{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+        min-width: 820px;
+        max-width: 1080px;
+        
+    }
+    .daniel{
+        grid-column-start: 1;
+        grid-column-end: 3;
+        background-image: url("./images/bg-pattern-quotation.svg");
+        background-repeat: no-repeat;
+        background-position: top right;
+    }
+    .kira{
+        grid-column-start: 4;
+        grid-row: 1 / span 2;
+    }
+    .patrick{
+        grid-column-start: 2;
+        grid-column-end: 4;
+    }
+}
